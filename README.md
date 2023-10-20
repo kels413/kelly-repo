@@ -1,3 +1,3 @@
 # kelly-repo
 for testing
-project by Afia and Kelvin Okay 
+project by Afia and Kelvin 
