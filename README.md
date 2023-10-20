@@ -1,3 +1,3 @@
 # kelly-repo
 for testing
-project by Afia 
+project by Afia and 
