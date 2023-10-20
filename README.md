@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Simple Shell Project
 
 ## Introduction
@@ -75,3 +76,8 @@ This project is licensed under the [ALX License](LICENSE). Feel free to use, mod
 
 Thank you for contributing to the Simple Shell Project! Your collaboration with Afia is valuable, and together, you can create a robust and efficient shell program for users. Happy coding! Again, thank you for your time! 🚀
 
+=======
+# kelly-repo
+for testing
+ALX Project by Afia and Kelvin 
+>>>>>>> origin/main
