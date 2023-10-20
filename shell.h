@@ -8,6 +8,7 @@
 # include <sys/wait.h>
 # include <unistd.h>
 extern char	**environ;
+
 void		startMyshell(void);
 ssize_t		readUserInput(char **args, size_t *size_args);
 void		writeError(char *input);
