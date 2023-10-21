@@ -22,13 +22,18 @@ void		printEnviron(void);
 int			main(void);
 void		nonInteractMode(char *token, int *status);
 char		**funcTokenize(char *str, char *delim);
+void		setEnvironmentVariable(char *variable,  char *value);
+
+void		unsetEnvironmentVariable(char *variable);
 
 void		funcExitStatus(int stat, char **args, char **token, int *status);
-void		exitCustom(int stat, char **args, char *prompt, int *status);
+
+void		handleCdCommand(char **args, int *stat, char **previousDir,
+				char *cwd);
 void		getPromptFail(char *prompt);
 
 char		*_strdup(const char *src);
-int			_strlen(char *str);
+int _strlen(const char *str);
 int			_strcmp(char *s1, char *s2);
 int			_atoi(char *s);
 #endif

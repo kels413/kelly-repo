@@ -39,7 +39,7 @@ char *_strdup(const char *src)
  * Return: The length of the string.
  */
 
-int _strlen(char *str)
+int _strlen(const char *str)
 {
 	int len;
 
@@ -86,6 +86,7 @@ int _strcmp(char *s1, char *s2)
  *
  * Return: The converted integer.
  */
+
 int _atoi(char *s)
 {
 	int sign = 1, i;

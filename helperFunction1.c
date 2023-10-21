@@ -97,46 +97,6 @@ void	waitChildprocess(int *stat)
 	}
 }
 
-/**
- * nonInteractMode - Execute shell commands in non-interactive mode
- * @token: Command token
- * @status: Pointer to status variable
- */
-
-void	nonInteractMode(char *token, int *status)
-{
-	char	**single_command;
-	char	*envp[] = {NULL};
-	int		stat;
-
-	token[strlen(token) - 1] = '\0';
-	single_command = funcTokenize(token, " \t");
-	if (single_command[0])
-	{
-		if (!_strcmp(single_command[0], "exit"))
-		{
-			if (single_command[1])
-			{
-				stat = _atoi(single_command[1]);
-				funcExitStatus(stat, single_command, &token, status);
-			}
-			else
-			{
-				free(token);
-				freeArgs(single_command);
-				exit(*status);
-			}
-		}
-		else if (!_strcmp(single_command[0], "env"))
-		{
-			printEnviron();
-			*status = 0;
-		}
-		else
-			executeCommands(single_command, envp, status);
-	}
-	freeArgs(single_command);
-}
 
 /**
  * funcTokenize - Tokenize input string based on delimiters
