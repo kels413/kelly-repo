@@ -21,7 +21,6 @@ void	startMyshell(void)
 	size_t	size_prompt;
 	ssize_t	numRead;
 	int		stat;
-	int myStat;
 	char	*previousDir;
 	char	cwd[1024];
 
@@ -52,7 +51,6 @@ void	startMyshell(void)
 				if (args[1])
 				{
 					stat = _atoi(args[1]);
-					exitCustom(myStat, args, prompt, &stat);
 				}
 				else
 				{
