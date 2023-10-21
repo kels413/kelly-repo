@@ -49,10 +49,16 @@ void	startMyshell(void)
 			{
 				/* Handle 'exit' command */
 				if (args[1])
+				{
 					stat = _atoi(args[1]);
-				free(prompt);
-				freeArgs(args);
-				exit(stat);
+					exitCustom(stat, args, prompt, &stat);
+				}
+				else
+				{
+					free(prompt);
+					freeArgs(args);
+					exit(stat);
+				}
 			}
 			else if (!_strcmp(args[0], "env"))
 			{
@@ -165,6 +171,7 @@ void	nonInteractMode(char *token, int *status)
 			if (single_command[1])
 			{
 				*status = _atoi(single_command[1]);
+
 			}
 			free(token);
 			freeArgs(single_command);
