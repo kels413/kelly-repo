@@ -70,7 +70,7 @@ If you encounter any issues or have suggestions for improvements, please feel fr
 
 ## License
 
-This project is licensed under the [ALX License](LICENSE). Feel free to use, modify, and distribute the code as per the license terms.
+This project is licensed under the  Feel free to use, modify, and distribute the code as per the license terms.
 
 ---
 
