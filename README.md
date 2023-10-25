@@ -68,10 +68,4 @@ To exit the shell, simply type `exit` and press Enter.
 
 If you encounter any issues or have suggestions for improvements, please feel free to create an issue on the GitHub repository.
 
-## License
-
-This project is licensed under the  Feel free to use, modify, and distribute the code as per the license terms.
-
----
-
 Thank you for contributing to the Simple Shell Project! Your collaboration with Afia is valuable, and together, you can create a robust and efficient shell program for users. Happy coding! Again, thank you for your time! 🚀
